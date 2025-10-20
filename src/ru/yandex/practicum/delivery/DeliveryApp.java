@@ -6,11 +6,11 @@ import java.util.Scanner;
 public class DeliveryApp {
 
     private static final Scanner scanner = new Scanner(System.in);
-    private static List<Parcel> allParcels = new ArrayList<>();
-    private static List<Trackable> trackableParcels = new ArrayList<>();
-    private static ParcelBox<StandardParcel> standardParcelBox = new ParcelBox<>(100);
-    private static ParcelBox<FragileParcel> fragileParcelBox = new ParcelBox<>(80);
-    private static ParcelBox<PerishableParcel> perishableParcelBox = new ParcelBox<>(60);
+    private static final List<Parcel> allParcels = new ArrayList<>();
+    private static final List<Trackable> trackableParcels = new ArrayList<>();
+    private static final ParcelBox<StandardParcel> standardParcelBox = new ParcelBox<>(100);
+    private static final ParcelBox<FragileParcel> fragileParcelBox = new ParcelBox<>(80);
+    private static final ParcelBox<PerishableParcel> perishableParcelBox = new ParcelBox<>(60);
 
     public static void main(String[] args) {
         boolean running = true;
